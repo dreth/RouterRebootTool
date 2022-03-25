@@ -1,0 +1,36 @@
+{
+    "credentials":{
+        "username":"",
+        "password":""
+    },
+    "path":{
+        "username":
+            {   
+                "type":"",
+                "value":""
+            },
+        "password":
+            {
+                "type":"",
+                "value":""
+            },
+        "login_button":
+            {
+                "type":"",
+                "value":""
+            },
+        "reboot_submenus":[
+            {   
+                "type":"",
+                "value":""
+            }
+        ],
+        "reboot_button":
+            {
+                "type":"",
+                "value":""
+            }
+    },
+    "address":"http://",
+    "headless":"True"
+}

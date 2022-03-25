@@ -82,3 +82,6 @@ if exec(f"browser.{find_by_method[paths['reboot_button']['type']]}(paths['reboot
 # click the reboot button
 exec(f"browser.{find_by_method[paths['reboot_button']['type']]}(paths['reboot_button']['value']).click()")
 print("successfully clicked on the reboot button!")
+
+# close driver
+browser.quit()

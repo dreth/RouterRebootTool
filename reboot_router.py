@@ -10,7 +10,7 @@ with open('private.json', 'r') as f:
     data = json.load(f)
     paths = data['path']
     address = data['address']
-    mode = data['mode'].capitalize()
+    mode = data['headless'].capitalize()
 
 # check what to use
 find_by_method = {

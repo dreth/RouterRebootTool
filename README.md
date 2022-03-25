@@ -58,12 +58,6 @@ Activate the new environment.
 source selenium-router-rebooter/bin/activate
 ```
 
-Install packages to perform the setup.
-
-```
-python -m pip install --upgrade pip setuptools wheel
-```
-
 Install the packages in the new environment.
 
 ```
@@ -82,12 +76,6 @@ Activate the new environment.
 
 ```
 .\selenium-router-rebooter\Scripts\activate.bat 
-```
-
-Install packages to perform the setup.
-
-```
-pip install --upgrade pip setuptools wheel
 ```
 
 Install the packages in the new environment.

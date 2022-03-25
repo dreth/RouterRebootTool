@@ -4,7 +4,7 @@ A simple selenium-based tool to reboot a router by navigating to its configurati
 
 For install instructions (if you need them) go to [Install instructions](#install-instructions), otherwise, you can continue reading.
 
-The only requirements for this to run are at least Python 3.8.8 (I guess it could also work with python 3.8 but I haven't tested) and selenium version `3.141.0`. I've already included a working geckodriver that will run the script in headless mode.
+The only requirements for this to run are at least Python 3.8.8 (I guess it could also work with python 3.8 but I haven't tested) and selenium version `3.141.0`. I've already included a working geckodriver that the script uses.
 
 ## How to use
 

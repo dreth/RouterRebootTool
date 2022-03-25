@@ -8,7 +8,9 @@ The only requirements for this to run are at least Python 3.8.8 (I guess it coul
 
 ## How to use
 
-1. Create a copy of `data.json` and name it `private.json`, this file is deliberately ignored by the `.gitignore` file to avoid being pushed to version control. You should fill up this file as follows:
+1. Clone this repository.
+
+2. Create a copy of `data.json` and name it `private.json`, this file is deliberately ignored by the `.gitignore` file to avoid being pushed to version control. You should fill up this file as follows:
 
     + Under the `credentials` key, fill up the `username` and `password` to log into your router's configuration interface.
 
@@ -28,7 +30,7 @@ The only requirements for this to run are at least Python 3.8.8 (I guess it coul
 
     + Under the `headless` key you should type if you want to run it in headless mode (`True`) or not (`False`). If to see the browser interface set this as `False`.
 
-2. Run the script in console using `python reboot_router.py`.
+3. Run the script in console using `python reboot_router.py`.
 
 ## Install instructions
 

@@ -30,7 +30,7 @@ The only requirements for this to run are at least Python 3.8.8 (I guess it coul
 
     + Under the `headless` key you should type if you want to run it in headless mode (`True`) or not (`False`). If to see the browser interface set this as `False`.
 
-3. Run the script in console using `python reboot_router.py`.
+3. Run the script in console using `python reboot_router.py` or `python3 reboot_router.py`.
 
 ## Install instructions
 

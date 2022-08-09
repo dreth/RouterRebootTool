@@ -1,8 +1,13 @@
 {
+    "driver":"geckodriver",
+    "address":"http://",
+    "headless":"True",
+
     "credentials":{
         "username":"",
         "password":""
     },
+    
     "path":{
         "username":
             {   
@@ -31,7 +36,5 @@
                 "type":"",
                 "value":""
             }
-    },
-    "address":"http://",
-    "headless":"True"
+    }
 }

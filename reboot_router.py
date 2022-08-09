@@ -42,15 +42,17 @@ wait = WebDriverWait(driver=browser, timeout=1000)
 router_site = browser.get(address)
 
 # wait until login fields show up
-exec(f"wait.until(EC.visibility_of_element_located(({wait_by[paths['username']['type']]}, paths['username']['value'])))")
+if paths['username']['exists'] == True:
+    exec(f"wait.until(EC.visibility_of_element_located(({wait_by[paths['username']['type']]}, paths['username']['value'])))")
 exec(f"wait.until(EC.visibility_of_element_located(({wait_by[paths['password']['type']]}, paths['password']['value'])))")
 exec(f"wait.until(EC.visibility_of_element_located(({wait_by[paths['login_button']['type']]}, paths['login_button']['value'])))")
 print("log in fields are visible.")
 
 # find login fields when they show up and fill them
-exec(f"browser.{find_by_method[paths['username']['type']]}(paths['username']['value']).click()")
-exec(f"browser.{find_by_method[paths['username']['type']]}(paths['username']['value']).clear()")
-exec(f"browser.{find_by_method[paths['username']['type']]}(paths['username']['value']).send_keys(data['credentials']['username'])")
+if paths['username']['exists'] == True:
+    exec(f"browser.{find_by_method[paths['username']['type']]}(paths['username']['value']).click()")
+    exec(f"browser.{find_by_method[paths['username']['type']]}(paths['username']['value']).clear()")
+    exec(f"browser.{find_by_method[paths['username']['type']]}(paths['username']['value']).send_keys(data['credentials']['username'])")
 exec(f"browser.{find_by_method[paths['password']['type']]}(paths['password']['value']).clear()")
 exec(f"browser.{find_by_method[paths['password']['type']]}(paths['password']['value']).send_keys(data['credentials']['password'])")
 

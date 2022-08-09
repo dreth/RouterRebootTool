@@ -12,7 +12,7 @@ The only requirements for this to run are at least Python 3.8.8 (I guess it coul
 
 2. Create a copy of `data.json` and name it `private.json`, this file is deliberately ignored by the `.gitignore` file to avoid being pushed to version control. You should fill up this file as follows:
 
-    + Under the `credentials` key, fill up the `username` and `password` to log into your router's configuration interface.
+    + Under the `credentials` key, fill up the `username` and `password` to log into your router's configuration interface. If there IS a username, then you must write `"True"` under the `exists` key under `username`. If it does NOT have a username, then just write `"False"`
 
     + Under the `path` key you have to fill up several things, to get this information you can use inspect element on your browser after right clicking on the input field for your router username in the login page and then in the html shown by the inspect element menu, right click on the highlighted text and copy what identifier should be used. In general for my purposes, the xpath works well, but you can also use the CSS Selector or ID of the field. After you have the unique identifier then:
   

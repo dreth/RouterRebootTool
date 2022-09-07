@@ -10,6 +10,10 @@ The driver versions included are:
 - geckodriver 0.31.0 (2022-04-11, b617178ef491)
 - chromedriver 104.0.5112.79
 
+## Disclaimer
+
+For this project I heavily rely on python's `exec()` function. If you find this useful and want to use it, be extremely careful where you use this and make sure that nothing being passed to the code is malicious. I am not responsible for anything you do, you use this tool at your own risk.
+
 ## How to use
 
 1. Clone this repository.

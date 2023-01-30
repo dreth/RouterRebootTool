@@ -10,6 +10,8 @@ The driver versions included are:
 - geckodriver 0.31.0 (2022-04-11, b617178ef491)
 - chromedriver 104.0.5112.79
 
+The selenium package used in this repo is not up to date and the selenium API has changed kind of meaningfully, so if you want to use it, stick to the version in the `requirements.txt` file, otherwise it won't work.
+
 ## Disclaimer
 
 For this project I heavily rely on python's `exec()` function. If you find this useful and want to use it, be extremely careful where you use this and make sure that nothing being passed to the code is malicious. I am not responsible for anything you do, you use this tool at your own risk.
@@ -74,7 +76,7 @@ source selenium-router-rebooter/bin/activate
 Install the packages in the new environment.
 
 ```
-pip install .
+pip install -r requirements.txt
 ```
 
 #### Windows
@@ -94,5 +96,5 @@ Activate the new environment.
 Install the packages in the new environment.
 
 ```
-pip install .
+pip install -r requirements.txt
 ```
